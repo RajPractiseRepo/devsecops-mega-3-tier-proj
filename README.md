@@ -100,6 +100,8 @@ echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]" \
   
 sudo apt-get update -y
 sudo apt-get install jenkins -y
+sudo systemctl status jenkins
+sudo systemctl start jenkins
 ```
 - <b>Now, access Jenkins Master on the browser on port 8080 and configure it</b>.
 #
