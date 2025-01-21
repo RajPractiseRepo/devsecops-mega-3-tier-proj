@@ -107,7 +107,7 @@ pipeline {
             }
         }
         
-        stage("Docker: Push to DockerHub"){
+        stage("Docker: Push image to DockerHub Repo"){
             steps{
                 script{
                     docker_push("wanderlust-backend-beta","${params.BACKEND_DOCKER_TAG}","rajpractise") 
